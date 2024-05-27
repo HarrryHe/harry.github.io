@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+    <title>JiachengHe</title>
+</head>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<body>
+    <div class="header">
+        <div id="nav">
+            <div class="logo"><a href="#"><i class="fa-solid fa-seedling"></i>JiachengHe</a></div>
+            <ul class="links">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#introduction"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#portfolio"><i class="fa-solid fa-photo-film"></i> Portfolio</a></li>
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i> Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="masthead">
+            <h2>Welcome!</h2>
+            <h2>I am <span class="type"></span></h2>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/jiacheng-he-6b7a17221" rel="external nofollow noreferrer" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                <a href="https://www.linkedin.com/in/jiacheng-he-6b7a17221" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fa-brands fa-github"></i></a></li>
+                <a href="mailto:tuo44998@temple.edu" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <div id="introduction" class="fade-target">
+            <h2>About Me</h2>
+            <p>a / brief / introduction</p>
+        </div>
+        <div class="line"></div>
+
+        <div class="about-me">
+            <div class="photo"><img src="../pic/ekko.jpg"></div>
+            <div class="sentence">
+                <h2>I'm Jiacheng He</h2>
+                <p>A motivated and detail-oriented Computer Science major student at Temple University, always striving for excellence in studies and personal growth. Passionate about computer science, and always eager to embrace opportunities to learn and innovate. </p>
+                <h4><span class="aphorism-container"><span class="aphorism"></span></span></h4>
+                <button class="btn" onclick="handleClick()"><i class="fa-solid fa-download"></i> Download Resume</button>
+                <iframe name="myIframe" style="display:none"></iframe>
+            </div>
+        </div>
+
+        <div id="skill" class="fade-target">
+            <h2>Skills</h2>
+            <p> my / technical / skills</p>
+        </div>
+        <div class="line"></div>
+
+        <div class="skill-scale">
+            <h3>Education</h3>
+            <p><i class="fa-solid fa-caret-right"></i>Temple University - Bachelor of Science - Computer Science - Senior</p>
+            <br>
+            <h3>Language</h3>
+            <p><i class="fa-solid fa-caret-right"></i> Chinese - Mandarin - Native Proficiency</p>
+            <p><i class="fa-solid fa-caret-right"></i> English - Professional Proficiency</p>
+            <br>
+            <h3>Programming Skills</h3>
+            <p><i class="fa-solid fa-caret-right"></i>C</p>
+            <p><i class="fa-solid fa-caret-right"></i>Java</p>
+            <p><i class="fa-solid fa-caret-right"></i>MySQL</p>
+            <p><i class="fa-solid fa-caret-right"></i>Python</p>
+            <p><i class="fa-solid fa-caret-right"></i>UX Design</p>
+            <p><i class="fa-solid fa-caret-right"></i>Web Application</p>
+            <p><i class="fa-solid fa-caret-right"></i>Operating System</p>
+            <p><i class="fa-solid fa-caret-right"></i>HTML & CSS & JavaScript</p>
+            <p><i class="fa-solid fa-caret-right"></i>Experienced in using Git and GitHub for learning open-sources and publishing projects</p>
+            <p><i class="fa-solid fa-caret-right"></i>Proficient in using most of the IDE applications, including IntelliJ IDEA, Eclipse, and Visual Studio Code</p>
+            <br>
+            <h3>Certification</h3>
+            <p><a href="https://coursera.org/share/739f86455721abb2e37c2802d56f3343" rel="external nofollow noreferrer" target="_blank" title="Coursera"><i class="fa-solid fa-caret-right"></i>Google IT Support Specialization</a></p>
+        </div>
+
+        <div id="portfolio" class="fade-target">
+            <h2>Portfolio</h2>
+            <p> my / important / projects</p>
+        </div>
+        <div class="line"></div>
+
+        <div class="slidershow">
+            <div class="swipe">
+                <input type="radio" name="indicator" id="indicator1" checked hidden>
+                <input type="radio" name="indicator" id="indicator2" hidden>
+                <input type="radio" name="indicator" id="indicator3" hidden>
+
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/jiacheng-he-6b7a17221" rel="external nofollow noreferrer" target="_blank" title="Github">Self-Made Shell</a></li>
+                    <li><a href="https://www.linkedin.com/in/jiacheng-he-6b7a17221" rel="external nofollow noreferrer" target="_blank" title="Github">Flappy-Bird and His Friends</a></li>
+                    <li><a href="https://www.linkedin.com/in/jiacheng-he-6b7a17221" rel="external nofollow noreferrer" target="_blank" title="Github">Under Constructed</a></li>
+                </ul>
+
+                <div class="indicators">
+                    <label for="indicator1"></label>
+                    <label for="indicator2"></label>
+                    <label for="indicator3"></label>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/jiacheng-he-6b7a17221" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/JiachengHe" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:tuo44998@temple.edu" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="footer-bottom">
+                &copy; Jiacheng He | All Rights Reserved
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    var typed1 = new Typed('.type' , {
+        strings: ['Jiacheng He (Harry)', 'a developer!'],
+        typeSpeed: 100,
+        loop: true,
+        backSpeed: 150
+    })
+
+    var typed2 = new Typed('.aphorism', {
+        strings: ['“Push through the pain. Giving up hurts more.” — Vegeta, Dragon Ball Z', 
+    '“You have no enemies.” ― Thors, Vinland Saga', 
+    '“For small creatures such as we the vastness is bearable only through love.” ― Carl Sagan',
+    '“Those who can imagine anything, can create the impossible.” ― Alan Turing'],
+        typeSpeed: 70,
+        loop: true,
+        backSpeed: 90,
+        shuffle: true,
+        backDelay: 10000
+    })
+</script>
+
+<script>
+    const handleClick = () => {
+        const link = document.createElement('a');
+        link.href = '../file/Jiacheng_He_Resume (1).pdf';
+        link.download = 'Jiacheng_He_Resume.pdf';
+        link.click();
+    };
+</script>
+
+<script src="../JS/nav.js"></script>
+<script src="../JS/fade.js"></script>
+<script src="../JS/slide.js"></script>
+
+</html>

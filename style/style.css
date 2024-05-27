@@ -1,0 +1,446 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#nav {
+    background-color: #2a2a2a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: top 0.3s ease-in-out;
+}
+
+.logo a {
+    color: rgb(191, 191, 191);
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: white;
+}
+
+
+.logo .fa-seedling {
+    margin-right: 8px;
+    color: #5e8266;
+}
+
+.logo .fa-seedling:hover {
+    color:#449c59;
+}
+
+
+.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.links li {
+    padding: 0 10px;
+    position: relative;
+}
+
+.links a {
+    color: rgb(191, 191, 191);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.links a:hover {
+    color: white;
+}
+
+.links li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.4s;
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.links li:hover::after {
+    width: 100%;
+}
+
+
+.masthead {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../pic/bocchi-min.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 50px;
+    height: 85vh;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.masthead h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.masthead .social-icon {
+    padding: 15px;
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    gap: 15px;
+}
+
+.masthead .social-icon a {
+    color:rgb(191, 191, 191);
+    font-size: 2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.masthead .social-icon a:hover {
+    color: white;
+    transform: rotate(360deg);
+}
+
+@media (max-width: 600px) {
+    .social-icon {
+        gap: 10px;
+    }
+}
+
+/*Body Part*/
+.main {
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../pic/jianyue-min.jpg") no-repeat center center fixed;
+    color: rgb(200, 200, 200);
+    overflow: hidden;
+}
+
+#introduction{
+    text-align: center;
+}
+
+#introduction h2 {
+    margin-bottom: 0;
+}
+
+#introduction p {
+    margin-top: 0;
+    padding-top: 5px;
+    font-style: italic;
+    color: rgb(165, 165, 165);
+}
+
+.fade-in {
+    opacity: 1 !important;
+}
+
+.fade-target {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.line {
+    width: 90%;
+    height: 2px;
+    background-color: rgb(200, 200, 200);
+    margin: 20px auto;
+}
+
+.about-me {
+    padding-top: 50px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    gap: 100px;
+}
+
+.about-me .photo {
+    margin-top: 45px;
+    float: left;
+}
+
+.about-me .photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 30%;
+}
+
+.about-me .sentence {
+    float: right;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-me .sentence p {
+    color: rgb(165, 165, 165);
+}
+
+.about-me .sentence h4 {
+    margin-top: 20px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.aphorism-container {
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.btn {
+    width: 250px;
+    height: 70px;
+    margin-top: 12vh;
+    margin-bottom: 5vh;
+    background: linear-gradient(90deg, #7a81bb, #588f65);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.15s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #726f9d, #404257);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    color:#333;
+}
+
+#skill{
+    margin-top: 30vh;
+    text-align: center;
+}
+
+#skill h2 {
+    margin-bottom: 0;
+}
+
+#skill p {
+    margin-top: 0;
+    padding-top: 5px;
+    font-style: italic;
+    color: rgb(165, 165, 165);
+}
+
+.skill-scale {
+    padding-top: 50px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.skill-scale p {
+    padding-left: 20px;
+    color: rgb(165, 165, 165);
+}
+
+.fa-caret-right {
+    padding-right: 10px;
+}
+
+.skill-scale a {
+    color: rgb(165, 165, 165);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.skill-scale a:hover {
+    color: white;
+}
+
+#portfolio{
+    margin-top: 30vh;
+    text-align: center;
+}
+
+#portfolio h2 {
+    margin-bottom: 0;
+}
+
+#portfolio p {
+    margin-top: 0;
+    padding-top: 5px;
+    font-style: italic;
+    color: rgb(165, 165, 165);
+}
+
+.slidershow {
+    padding-top: 50px;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 200px;
+}
+
+.swipe {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.swipe ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 300%;
+    transition: transform 0.5s;
+}
+
+.swipe li {
+    width: 100%;
+    height: 500px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    box-sizing: border-box;
+}
+
+.swipe a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.swipe a:hover {
+    color: white;
+}
+
+.swipe li:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../pic/shell.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.swipe li:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../pic/flappybird-min.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.swipe li:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #555 no-repeat center center fixed;
+    background-size: cover;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.indicators label {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#indicator1:checked ~ ul {
+    transform: translateX(0);
+}
+
+#indicator2:checked ~ ul {
+    transform: translateX(-33.33%);
+}
+
+#indicator3:checked ~ ul {
+    transform: translateX(-66.66%);
+}
+
+#indicator1:checked ~ .indicators label[for="indicator1"],
+#indicator2:checked ~ .indicators label[for="indicator2"],
+#indicator3:checked ~ .indicators label[for="indicator3"] {
+    background: #fff;
+}
+
+/* footer */
+.footer {
+    background: #2a2a2a;;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social {
+    margin-bottom: 10px;
+}
+
+.social a {
+    margin: 0 10px;
+    color: rgb(200, 200, 200);
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color:#5e8266;
+}
+
+.footer-bottom {
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
